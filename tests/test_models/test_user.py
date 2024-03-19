@@ -16,7 +16,7 @@ except Exception as e:
     print(e)
 
 
-class TestBaseModel(unittest.TestCase):
+class TestUserModel(unittest.TestCase):
     """This test class collects a series of tests for the class BaseModel"""
 
     def test_init_method_for_user(self):

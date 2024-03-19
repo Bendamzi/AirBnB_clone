@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """This module contains the state class definition"""
 
+import sys
+import os
 
-from base_model import BaseModel
+sys.path.append(os.getcwd())
+try:
+    from models.base_model import BaseModel
+except Exception as e:
+    print(e)
 
 
 class State(BaseModel):

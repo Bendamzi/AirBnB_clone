@@ -1,20 +1,27 @@
 #!/usr/bin/env python3
 """This module contains the definition for amenity class"""
 
-from base_model import BaseModel
+import sys
+import os
+
+sys.path.append(os.getcwd())
+try:
+    from models.base_model import BaseModel
+except Exception as e:
+    print(e)
 
 
-class Amenity(BaseModel):
+class Place(BaseModel):
     """This is the class definition for the amenity object"""
 
     city_id = ""
     user_id = ""
     name = ""
     description = ""
-    number_rooms = ""
-    number_bathrooms = ""
-    max_guest = ""
-    price_by_night = ""
+    number_rooms = 0
+    number_bathrooms = 0
+    max_guest = 0
+    price_by_night = 0
     latitude = 0.0
     longitude = 0.0
     amenity_id = []

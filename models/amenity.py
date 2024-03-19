@@ -1,8 +1,14 @@
 #!/usr/bin/env python3
 """This module contains the Amenity class definition"""
 
+import sys
+import os
 
-from base_model import BaseModel
+sys.path.append(os.getcwd())
+try:
+    from models.base_model import BaseModel
+except Exception as e:
+    print(e)
 
 
 class Amenity(BaseModel):
@@ -14,5 +20,5 @@ class Amenity(BaseModel):
         """This method initializes an instance of this class"""
         if len(kwargs) == 0:
             super().__init__()
-        else:
+        elif len(kwargs) > 0:
             super().__init__(**kwargs)

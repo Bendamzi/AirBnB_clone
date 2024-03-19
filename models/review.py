@@ -1,7 +1,14 @@
 #!/usr/bin/env python3
 """This module handles the definition of the review class"""
 
-from base_model import BaseModel
+import sys
+import os
+
+sys.path.append(os.getcwd())
+try:
+    from models.base_model import BaseModel
+except Exception as e:
+    print(e)
 
 
 class Review(BaseModel):
