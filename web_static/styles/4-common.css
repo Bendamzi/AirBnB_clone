@@ -1,0 +1,21 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+    font-family: Circular, "Helvetica Neue", Helvetica, Arial, sans-serif;
+    color: #484848;
+}
+
+.container {
+    max-width: 1000px;
+    margin: 30px auto;
+}
+
+.logo {
+    width: 100px;
+    height: 50px;
+    background-image: url('home/ben/AirBnB_clone/web_static/images/');
+    background-size: contain;
+    background-repeat: no-repeat;
+    margin-left: 20px;
+}

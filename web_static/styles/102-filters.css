@@ -1,0 +1,9 @@
+.search-button {
+    width: 100%;
+}
+
+@media (min-width: 768px) {
+    .search-button {
+        width: 20%;
+    }
+}
